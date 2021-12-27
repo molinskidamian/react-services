@@ -14,16 +14,16 @@ const ListItem = ({
     tempDelta,
 }) => (
     <li className={styles.wrapper}>
-        <p>{id}</p>
-        <p>{date}</p>
-        <p>{job}</p>
-        <p>{location}</p>
-        <p>{telephone}</p>
-        <p>{presureLow}</p>
-        <p>{presureHigh}</p>
-        <p>{tempIn}</p>
-        <p>{tempOut}</p>
-        <p>{tempDelta}</p>
+        <p>id: {id}</p>
+        <p>Date: {date}</p>
+        <p>Job: {job}</p>
+        <p>Location: {location}</p>
+        <p>Telephone: {telephone}</p>
+        <p>Presure Low: {presureLow}</p>
+        <p>Presure Hight: {presureHigh}</p>
+        <p>Temperature In: {tempIn}</p>
+        <p>Temperature Out: {tempOut}</p>
+        <p>Temperature Delta: {tempDelta}</p>
     </li>
 );
 

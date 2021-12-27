@@ -1,4 +1,14 @@
+body {
+    background-color: #f3f9fd;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .wrapper {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     // background-color: orange;
+    display: flex;
+    
 }

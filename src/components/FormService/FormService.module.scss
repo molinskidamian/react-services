@@ -1,0 +1,19 @@
+.wrapper {
+    outline: 1px dashed black;
+}
+
+label {
+    display: block;
+    margin: 1rem 0;
+}
+
+input,
+select {
+    border: 1px solid #e7e7e7;
+    color: #585757;
+    min-width: 50vw;
+    padding: 0.4rem 0.3rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}

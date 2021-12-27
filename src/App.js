@@ -1,5 +1,7 @@
 import React from "react";
 import ListWrapper from "./components/ListWrapper/ListWrapper";
+import FormService from "./components/FormService/FormService";
+import "./index.css";
 
 const InitialDefaultServices = [
     {
@@ -33,10 +35,36 @@ class App extends React.Component {
         services: [...InitialDefaultServices],
     };
 
+    addService = (e) => {
+        e.preventDefault();
+        console.log("click");
+        console.log(e.target);
+
+        const newJob = {
+            id: Math.floor(Math.random() * 10),
+            date: e.target[0].value,
+            job: e.target[1].value,
+            location: e.target[2].value,
+            telephone: e.target[3].value,
+            presureLow: e.target[4].value,
+            presureHigh: e.target[5].value,
+            tempIn: e.target[6].value,
+            tempOut: e.target[7].value,
+            tempDelta: e.target[8].value,
+        };
+
+        console.log(newJob);
+
+        this.setState((prevState) => ({
+            services: [...prevState.services, newJob],
+        }));
+    };
+
     render() {
         return (
             <>
                 <ListWrapper services={this.state.services} />
+                <FormService submitFn={this.addService} />
             </>
         );
     }
